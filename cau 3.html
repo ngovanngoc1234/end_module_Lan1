@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = ["a","b"];
+    console.log(checkNegative(a));
+    function checkNegative(string) {
+        let vowels = ["a", "e", "i", "o", "u"];
+
+        for (let i = 0; i < string.length; i++) {
+            if (vowels[i]==string[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+</script>
+</body>
+</html>
