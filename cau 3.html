@@ -6,17 +6,21 @@
 </head>
 <body>
 <script>
-    let a = ["a","b"];
+    let a = ["a", "b"];
     console.log(checkNegative(a));
+
     function checkNegative(string) {
         let vowels = ["a", "e", "i", "o", "u"];
-
+        let count = 0;
         for (let i = 0; i < string.length; i++) {
-            if (vowels[i]==string[i]) {
-                return true;
+            if (vowels[i].toLocaleLowerCase() === string[i].toLocaleLowerCase()) {
+                count += 1;
             }
         }
-        return false;
+        if (count===0) {
+            return false;
+        }
+
     }
 </script>
 </body>
